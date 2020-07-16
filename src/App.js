@@ -13,10 +13,11 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import SkillsMobile from './pages/SkillMobile'
 
 function App() {
   return (
-    <div className="root">
+    <div className='root'>
       <AppBar position="fixed" className="app-header">
         <Toolbar className="header-container">
           {/* <IconButton edge="start" color="inherit" aria-label="menu">
@@ -70,10 +71,12 @@ function App() {
       </AppBar>
       <div className="about-empty" id="about"/>
       <About about={data.About} />
+      <Divider className="divider-mobile"/>
       <Experience experience={data.Experience} />
       <Divider />
       <Education education={data.Education} />
       <Divider />
+      <SkillsMobile skills={data.Skills}/>
       <Skills skills={data.Skills} />
       <Divider />
       <Contact about={data.About} />

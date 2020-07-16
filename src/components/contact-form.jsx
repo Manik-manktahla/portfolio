@@ -43,70 +43,128 @@ const ContactForm = (props) => {
         isSubmitting,
         /* and other goodies */
       }) => (
-        <form onSubmit={handleSubmit} className=".class-form">
-          <Grid container spacing={3}>
-            <Grid className="contact-grid" item xs={12} sm={6}>
-              <TextField
-                type="name"
-                name="name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.name}
-                placeholder="Name"
-                variant="outlined"
-                className="contact-inputs"
-              />
+        <form onSubmit={handleSubmit} className="form-main">
+          <div className="form-desktop">
+            <Grid container spacing={3}>
+              <Grid className="contact-grid" item xs={12} sm={6}>
+                <TextField
+                  type="name"
+                  name="name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.name}
+                  placeholder="Name"
+                  variant="outlined"
+                  className="contact-inputs"
+                />
+              </Grid>
+              <Grid className="contact-grid" item xs={12} sm={6}>
+                <TextField
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                  placeholder="Email"
+                  variant="outlined"
+                  className="contact-inputs email"
+                />
+                {errors.email && touched.email && errors.email}
+              </Grid>
+              <Grid className="contact-grid" item xs={12}>
+                <TextField
+                  type="text"
+                  name="subject"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.subject}
+                  placeholder="Subject"
+                  variant="outlined"
+                  className="contact-input contact-inputs"
+                />
+                {errors.subject && touched.subject && errors.subject}
+              </Grid>
+              <Grid className="contact-grid" item xs={12}>
+                <TextField
+                  type="textArea"
+                  name="message"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.message}
+                  label="Message"
+                  variant="outlined"
+                  multiline
+                  rows={6}
+                  className="contact-input contact-inputs"
+                />
+              </Grid>
             </Grid>
-            <Grid className="contact-grid" item xs={12} sm={6}>
-              <TextField
-                type="email"
-                name="email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.email}
-                placeholder="Email"
-                variant="outlined"
-                className="contact-inputs email"
-              />
-              {errors.email && touched.email && errors.email}
-            </Grid>
-            <Grid className="contact-grid" item xs={12}>
-              <TextField
-                type="text"
-                name="subject"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.subject}
-                placeholder="Subject"
-                variant="outlined"
-                className="contact-input contact-inputs"
-              />
-              {errors.subject && touched.subject && errors.subject}
-            </Grid>
-            <Grid className="contact-grid" item xs={12}>
-              <TextField
-                type="textArea"
-                name="message"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.message}
-                label="Message"
-                variant="outlined"
-                multiline
-                rows={6}
-                className="contact-input contact-inputs"
-              />
-            </Grid>
-          </Grid>
-          <Button
-            className="contact-submit-button"
-            variant="contained"
-            color="primary"
-            type="submit"
-            disabled={isSubmitting}
-          >
-            Submit
-          </Button>
+            <Button
+              className="contact-submit-button"
+              variant="contained"
+              color="primary"
+              type="submit"
+              disabled={isSubmitting}
+            >
+              Submit
+            </Button>
+          </div>
+          <div className="form-mobile">
+            <TextField
+              type="name"
+              name="name"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.name}
+              placeholder="Name"
+              variant="outlined"
+              className="contact-inputs"
+            />
+
+            <TextField
+              type="email"
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.email}
+              placeholder="Email"
+              variant="outlined"
+              className="contact-inputs"
+            />
+            {errors.email && touched.email && errors.email}
+            <TextField
+              type="text"
+              name="subject"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.subject}
+              placeholder="Subject"
+              variant="outlined"
+              className="contact-input contact-inputs"
+            />
+            {errors.subject && touched.subject && errors.subject}
+            <TextField
+              type="textArea"
+              name="message"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.message}
+              label="Message"
+              variant="outlined"
+              multiline
+              rows={6}
+              className="contact-input contact-inputs"
+            />
+            <Button
+              className="contact-submit-button"
+              variant="contained"
+              color="primary"
+              type="submit"
+              disabled={isSubmitting}
+            >
+              Submit
+            </Button>
+          </div>
         </form>
       )}
     </Formik>

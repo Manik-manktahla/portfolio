@@ -18,21 +18,32 @@ const useStyles = makeStyles((theme) => ({
 const About = (props) => {
   const classes = useStyles();
   return (
+    <div>
     <div className="about-mainGrid">
       <Grid container xs={12} className="about-grid">
         <div className="about-color-grid">
-          <div className="about-gridOne"/>
-          <div className="about-gridTwo"/>
+          <div className="about-gridOne" />
+          <div className="about-gridTwo" />
         </div>
       </Grid>
+
       <Grid container className="about-container" spacing={2}>
-        <Grid item>
-          <MyInfo {...props}/>
+        <Grid item className="about-myinfo">
+          <MyInfo {...props} />
         </Grid>
-        <Grid item style={{textAlign:"initial"}}>
-          <PersonalInfo {...props}/>
+        <Grid item style={{ textAlign: "initial" }}>
+          <PersonalInfo {...props} />
         </Grid>
       </Grid>
+      <div className="about-mobile">
+        <Grid item className="about-myinfo">
+          <MyInfo {...props} />
+        </Grid>
+        <Grid item style={{ textAlign: "initial" }}>
+          <PersonalInfo {...props} />
+        </Grid>
+      </div>
+    </div>
     </div>
   );
 };

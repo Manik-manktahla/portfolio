@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const MyInfo = (props) => {
   const classes = useStyles();
   return (
-    <Card className={classes.root}>
+    <Card className="myinfo-main">
       <CardContent className="profile-photo">
         <Avatar src={posters} className="image" />
       </CardContent>

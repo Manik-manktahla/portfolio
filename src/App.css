@@ -37,66 +37,64 @@
   }
 }
 
-.profile-photo{
+.profile-photo {
   text-align: center;
   padding: 40px 40px 7px 40px !important;
   background-color: antiquewhite;
 }
 
-.image{
+.image {
   display: inline-block !important;
   width: 200px !important;
   height: 200px !important;
 }
 
-.name-content{
+.name-content {
   text-align: center;
   background-color: antiquewhite;
 }
 
-.name{
+.name {
   font-weight: 700 !important;
 }
-.work{
+.work {
   font-weight: 400;
 }
 
-.footer-actions{
-  padding: 0px 30px 0px 45px!important;
+.footer-actions {
+  padding: 0px 30px 0px 45px !important;
 }
-.about-divider{
+.about-divider {
   margin: 15px 0px !important;
   width: 50px;
   display: inline-block;
   background-color: #00aaf9 !important;
 }
 
-
-.about-container{
+.about-container {
   flex-grow: 1;
   align-self: center;
   justify-self: center;
   grid-area: overlap;
   max-width: 720px;
-  grid-column: 2/ span 4 ;
+  grid-column: 2 / span 4;
   position: relative;
 }
-.personalInfo{
+.personalInfo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 400px;
 }
 
-.experience-container{
+.experience-container {
   text-align: center;
   padding-top: 100px;
   max-width: 800px;
   display: inline-block;
 }
-  
 
-.skills-container{
+.skills-container {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 35px;
@@ -106,68 +104,68 @@
   /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("./static/identyfying_skills_needs_360x240.jpg");   */
 }
 
-.experience-text{
+.experience-text {
   text-align: initial;
 }
 
-.contact-container{
-  width: 800px !important;
+.contact-container {
   display: inline-block;
   max-width: 800px;
 }
 
-.contact-input{
+.contact-input {
   width: 100%;
-  padding-left: 10px
+  padding-left: 10px;
 }
 
-.contact-submit-button{
+.contact-submit-button {
   margin-top: 20px !important;
-  width: 100%
+  width: 100%;
 }
 
-.contact-personal-container{
-  text-align: initial
+.contact-personal-container {
+  text-align: initial;
 }
 
-.contact-main-container{
+.contact-main-container {
   text-align: center;
   padding-top: 100px;
   background-color: #cacaca87;
+  padding-bottom: 20px
 }
 
-.contact-heading{
+.contact-heading {
   color: #3f51b5;
 }
-.contact-divider{
+.contact-divider {
   background-color: #fafafa !important;
 }
 
-.contact-inputs{
-  background-color:white !important;
+.contact-inputs {
+  background-color: white !important;
 }
 
-.contact-subContainer{
-  padding-top: 50px !important
+.contact-subContainer {
+  padding-top: 50px !important;
 }
 
-.contact-grid{
-  padding: 6px 0px !important
+.contact-grid {
+  padding: 6px 0px !important;
 }
 
-.email{
-  margin-left: 5px !important
+.email {
+  margin-left: 5px !important;
 }
 
-.contact-vertical-divider{
+.contact-vertical-divider {
   margin: 0px 12px 0px 20px !important;
 }
-.root{
+.root {
   text-align: center;
   width: 100%;
 }
 
-.about-mainGrid{
+.about-mainGrid {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 3fr;
   grid-template-rows: 1fr;
@@ -175,13 +173,123 @@
   position: relative;
 }
 
-.about-grid{
+@media only screen and (max-device-width: 480px) {
+  .about-grid {
+    display: none !important;
+  }
+  .about-container {
+    display: none !important;
+    flex-direction: column;
+    width: 100% !important;
+    padding-top: 25px;
+  }
+  .app-header {
+    display: none !important;
+  }
+  .about-empty {
+    display: none !important;
+  }
+  .myinfo-main {
+    width: 100% !important;
+    padding: 0px !important;
+  }
+  .about-mainGrid {
+    display: flex !important;
+    width: 100% !important;
+  }
+  .root {
+    width: 100% !important;
+  }
+  .personalInfo {
+    /* padding-left: 20px; */
+    width: 100% !important;
+  }
+
+  .personal-header {
+    text-align: center;
+  }
+  .about-myinfo {
+    padding: 0px !important;
+  }
+  .about-mobile {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .experience-container {
+    padding-top: 25px;
+  }
+  .exp-des {
+    display: none;
+  }
+  .divider-mobile {
+    display: block;
+  }
+  .skills-subcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-container {
+    display: none;
+  }
+  .skills-container-mobile {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .skills-subcontainer-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-main-container{
+    padding-top: 25px;
+  }
+  .contact-mobile{
+    display: flex !important;
+    padding: 10px
+  }
+  .contact-container{
+    display: none;
+  }
+  .form-mobile{
+    display: flex !important;
+    flex-direction: column;
+    width: 100%
+  }
+  .form-desktop{
+    display: none;
+  }
+  .form-main{
+    width: 100% !important;
+  }
+  .mobile-padding{
+    padding-left: 20px;
+  }
+}
+.form-mobile{
+  display: none;
+}
+.contact-mobile{
+  display: none;
+}
+.skills-container-mobile{
+  display: none;
+}
+.about-mobile {
+  display: none;
+}
+.about-grid {
   grid-area: overlap;
-  grid-column: 1/span 5;
+  grid-column: 1 / span 5;
   position: relative;
 }
 
-.about-color-grid{
+.about-color-grid {
   grid-template-columns: 3fr 2.2fr 3fr 3fr;
   grid-template-areas: "overlap";
   width: 100%;
@@ -190,44 +298,44 @@
   position: relative;
 }
 
-.about-gridOne{
+.about-gridOne {
   height: 500px;
   background-color: antiquewhite;
   width: 50%;
   grid-area: overlap;
-  grid-column: 1/span 5;
+  grid-column: 1 / span 5 !important;
 }
-.about-gridTwo{
+.about-gridTwo {
   height: 500px;
   background-color: white;
   width: 50%;
   grid-area: overlap;
-  grid-column: 3/span 5
+  grid-column: 3 / span 5;
 }
 
-.text-color-light{
- color: #282c34d9 !important
+.text-color-light {
+  color: #282c34d9 !important;
 }
 
-.text-color-blue{
-  color: #00aaf9;
+.text-color-blue {
+  color: #479c4b !important;
 }
 
-.app-header{
+.app-header {
   background-color: white !important;
   box-shadow: unset !important;
   min-height: 100px;
   padding-top: 15px;
 }
-.header_options{
+.header_options {
   float: right !important;
-  width: 100% 
+  width: 100%;
 }
 
-.header-container{
+.header-container {
   text-align: right !important;
 }
 
-.about-empty{
+.about-empty {
   height: 100px;
 }

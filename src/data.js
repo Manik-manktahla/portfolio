@@ -42,14 +42,14 @@ const data = {
     marks: "8.03 GPA"
   },
   {
-    Institute_Name: "BITS Pilani, Pilani Campus",
-    Field: "B.E. in Electrical and Electronics Engineering",
+    Institute_Name: "Mount Carmel, School",
+    Field: "12th",
     year: {
-      end: "July 2019",
-      start: "August 2015",
+      end: "March 2015",
+      start: "April 2014",
     },
-    location: "Pilani, India",
-    marks: "8.03 GPA"
+    location: "Chandigarh, India",
+    marks: "94.6%"
   }],
   Skills : [{
     skill_name: "JavaScript",
@@ -58,11 +58,49 @@ const data = {
     skill_name: "React",
     rating: 4
   },{
-    skill_name: "Node",
+    skill_name: "NodeJS",
+    rating: 3
+  },
+  {
+    skill_name: "Express",
+    rating: 3
+  },
+  {
+    skill_name: "CSS",
+    rating: 4
+  },
+  {
+    skill_name: "HTML",
+    rating: 4
+  },
+  {
+    skill_name: "JSON",
+    rating: 4
+  },
+  {
+    skill_name: "LESS",
+    rating: 3
+  },
+  {
+    skill_name: "Redux",
+    rating: 4
+  },
+  {
+    skill_name: "Mongoose",
     rating: 3
   },{
     skill_name: "Java",
     rating: 3
+  },{
+    skill_name: "Spring",
+    rating: 2
+  },{
+    skill_name: "Python",
+    rating: 2
+  },
+  {
+    skill_name: "C",
+    rating: 4
   }]
 }
 

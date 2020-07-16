@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 
 const Experience = (props) => {
+
   return (
     <div className="experience-container" id="experience">
       <h1 className="text-color-blue">EXPERIENCE</h1>
@@ -31,9 +32,11 @@ const Experience = (props) => {
               <TimelineContent className="experience-text">
                 <Typography>{exp.company_name}</Typography>
                 <Typography>{exp.location}</Typography>
+                <div className="exp-des">
                 {exp.description.map((des) => {
                   return <Typography>{des}</Typography>;
                 })}
+                </div>
               </TimelineContent>
             </TimelineItem>
           );

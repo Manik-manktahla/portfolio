@@ -23,8 +23,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Skills = (props) => {
   const classes = useStyles();
-  const map1 = props.skills.slice(0, props.skills.length / 2);
-  const map2 = props.skills.slice(props.skills.length / 2, props.skills.length);
+  const num = props.skills.length / 2
+  const map1 = props.skills.slice(0, Math.ceil(num));
+  const map2 = props.skills.slice(Math.ceil(num), props.skills.length);
   console.log(map1, map2);
   return (
     <div className="skills-container" id="skills">
@@ -34,9 +35,9 @@ const Skills = (props) => {
         container
         xs={12}
         spacing={3}
-        direction="row"
         justify="center"
         alignItems="center"
+        className="skills-subcontainer"
       >
         <Grid item xs={5}>
           <List component="nav" aria-label="main mailbox folders">
@@ -48,7 +49,7 @@ const Skills = (props) => {
                       <Typography component="p">{item.skill_name}</Typography>
                     </Grid>
                     <Grid item xs={4}>
-                      <Rating name="read-only" value={item.rating} readOnly />
+                      <Rating name="read-only" value={item.rating} readOnly className="text-color-blue" />
                     </Grid>
                   </Grid>
                 </ListItem>
@@ -69,7 +70,7 @@ const Skills = (props) => {
                       <Typography component="p">{item.skill_name}</Typography>
                     </Grid>
                     <Grid item xs={4}>
-                      <Rating name="read-only" value={item.rating} readOnly />
+                      <Rating name="read-only" value={item.rating} readOnly className="text-color-blue" />
                     </Grid>
                   </Grid>
                 </ListItem>
