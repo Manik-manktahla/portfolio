@@ -36,3 +36,198 @@
     transform: rotate(360deg);
   }
 }
+
+.profile-photo{
+  text-align: center;
+  padding: 40px 40px 7px 40px !important;
+  background-color: antiquewhite;
+}
+
+.image{
+  display: inline-block !important;
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.name-content{
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.name{
+  font-weight: 700 !important;
+}
+.work{
+  font-weight: 400;
+}
+
+.footer-actions{
+  padding: 0px 30px 0px 45px!important;
+}
+.about-divider{
+  margin: 15px 0px !important;
+  width: 50px;
+  display: inline-block;
+  background-color: #00aaf9 !important;
+}
+
+
+.about-container{
+  flex-grow: 1;
+  align-self: center;
+  justify-self: center;
+  grid-area: overlap;
+  max-width: 720px;
+  grid-column: 2/ span 4 ;
+  position: relative;
+}
+.personalInfo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.experience-container{
+  text-align: center;
+  padding-top: 100px;
+  max-width: 800px;
+  display: inline-block;
+}
+  
+
+.skills-container{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 35px;
+  max-width: 800px;
+  display: inline-block;
+  /* background-color: antiquewhite; */
+  /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("./static/identyfying_skills_needs_360x240.jpg");   */
+}
+
+.experience-text{
+  text-align: initial;
+}
+
+.contact-container{
+  width: 800px !important;
+  display: inline-block;
+  max-width: 800px;
+}
+
+.contact-input{
+  width: 100%;
+  padding-left: 10px
+}
+
+.contact-submit-button{
+  margin-top: 20px !important;
+  width: 100%
+}
+
+.contact-personal-container{
+  text-align: initial
+}
+
+.contact-main-container{
+  text-align: center;
+  padding-top: 100px;
+  background-color: #cacaca87;
+}
+
+.contact-heading{
+  color: #3f51b5;
+}
+.contact-divider{
+  background-color: #fafafa !important;
+}
+
+.contact-inputs{
+  background-color:white !important;
+}
+
+.contact-subContainer{
+  padding-top: 50px !important
+}
+
+.contact-grid{
+  padding: 6px 0px !important
+}
+
+.email{
+  margin-left: 5px !important
+}
+
+.contact-vertical-divider{
+  margin: 0px 12px 0px 20px !important;
+}
+.root{
+  text-align: center;
+  width: 100%;
+}
+
+.about-mainGrid{
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  position: relative;
+}
+
+.about-grid{
+  grid-area: overlap;
+  grid-column: 1/span 5;
+  position: relative;
+}
+
+.about-color-grid{
+  grid-template-columns: 3fr 2.2fr 3fr 3fr;
+  grid-template-areas: "overlap";
+  width: 100%;
+  max-height: 500px;
+  display: grid;
+  position: relative;
+}
+
+.about-gridOne{
+  height: 500px;
+  background-color: antiquewhite;
+  width: 50%;
+  grid-area: overlap;
+  grid-column: 1/span 5;
+}
+.about-gridTwo{
+  height: 500px;
+  background-color: white;
+  width: 50%;
+  grid-area: overlap;
+  grid-column: 3/span 5
+}
+
+.text-color-light{
+ color: #282c34d9 !important
+}
+
+.text-color-blue{
+  color: #00aaf9;
+}
+
+.app-header{
+  background-color: white !important;
+  box-shadow: unset !important;
+  min-height: 100px;
+  padding-top: 15px;
+}
+.header_options{
+  float: right !important;
+  width: 100% 
+}
+
+.header-container{
+  text-align: right !important;
+}
+
+.about-empty{
+  height: 100px;
+}
